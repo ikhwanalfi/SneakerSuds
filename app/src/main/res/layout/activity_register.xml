@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/background1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp"
+        android:src="@drawable/logosneakersuds2"
+        tools:ignore="ContentDescription" />
+    <TextView
+        android:id="@+id/text1"
+        android:layout_below="@+id/background1"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/let_s_get_started"
+        android:fontFamily="@font/poppinsbold"
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text1"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppinsregular"
+        android:text="@string/create_an_new_account"
+        android:textColor="@color/gray"
+        android:textSize="12sp"
+        tools:ignore="TextContrastCheck" />
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_below="@id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        >
+
+        <EditText
+            android:id="@+id/edit_nama_register"
+            android:layout_width="343dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle"
+            android:drawableStart="@drawable/user"
+            android:fontFamily="@font/poppinsregular"
+            android:minHeight="48dp"
+            android:paddingStart="10dp"
+            android:hint="@string/your_nama"
+            android:textColor="@color/gray"
+            android:textSize="12sp"
+            tools:ignore="Autofill,LabelFor,RtlSymmetry,TextContrastCheck,TextFields"
+            />
+        <EditText
+            android:id="@+id/edit_email_register"
+            android:layout_width="343dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle"
+            android:drawableStart="@drawable/message"
+            android:fontFamily="@font/poppinsregular"
+            android:layout_marginTop="10dp"
+            android:minHeight="48dp"
+            android:paddingStart="10dp"
+            android:hint="@string/your_email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/gray"
+            android:textSize="12sp"
+            tools:ignore="Autofill,LabelFor,RtlSymmetry,TextContrastCheck,TextFields" />
+        <EditText
+            android:id="@+id/edit_password_register"
+            android:layout_width="343dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rectangle"
+            android:drawableStart="@drawable/password"
+            android:fontFamily="@font/poppinsregular"
+            android:minHeight="48dp"
+            android:paddingStart="10dp"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:textColor="@color/gray"
+            android:textSize="12sp"
+            tools:ignore="Autofill,LabelFor,RtlSymmetry,TextContrastCheck,TextFields" />
+        <EditText
+            android:id="@+id/edit_again_password_register"
+            android:layout_width="343dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle"
+            android:drawableStart="@drawable/password"
+            android:fontFamily="@font/poppinsregular"
+            android:minHeight="48dp"
+            android:paddingStart="10dp"
+            android:layout_marginTop="10dp"
+            android:hint="@string/repeat_password"
+            android:inputType="textPassword"
+            android:textColor="@color/gray"
+            android:textSize="12sp"
+            tools:ignore="Autofill,LabelFor,RtlSymmetry,TextContrastCheck,TextFields" />
+
+        <Button
+        android:id="@+id/btn_sign_up_register"
+        android:layout_width="343dp"
+        android:layout_height="57dp"
+        android:paddingHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/sign_up"
+            android:textColor="@color/white"
+        android:background="@drawable/bg_rectangle_sign_up"
+        android:textAllCaps="false"
+        tools:ignore="VisualLintButtonSize"
+            />
+        <LinearLayout
+            android:id="@+id/dont_have_acoun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            tools:ignore="ObsoleteLayoutParam">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/have_a_account"
+                android:fontFamily="@font/poppinsregular"
+                android:textSize="12sp"
+                />
+
+            <TextView
+                android:id="@+id/text_Sign_in_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/poppinsbold"
+                android:text="@string/sign_in"
+                android:textColor="@color/secondBlue"
+                tools:ignore="TextContrastCheck" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

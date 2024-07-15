@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MethodPaymentActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/poppinssemibold"
+            android:text="Payment"
+            android:textColor="@color/black"
+            android:textSize="22sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        >
+        <ImageView
+            android:id="@+id/p1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="#EBF0FF"/>
+        <ImageView
+            android:id="@+id/payment1"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/cc"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsbold"
+            android:text="Credit Card or Debit"
+            android:layout_centerVertical="true"
+            android:textSize="14sp"
+            android:layout_toRightOf="@id/payment1"
+            android:layout_marginLeft="20dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp">
+        <ImageView
+            android:id="@+id/p2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@color/white"/>
+        <ImageView
+            android:id="@+id/payment2"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/paypal"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsbold"
+            android:text="Paypal"
+            android:layout_centerVertical="true"
+            android:textSize="14sp"
+            android:layout_toRightOf="@id/payment2"
+            android:layout_marginLeft="20dp"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp">
+        <ImageView
+            android:id="@+id/p3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@color/white"/>
+        <ImageView
+            android:id="@+id/payment3"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/bank"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsbold"
+            android:text="Bank Transfer"
+            android:layout_centerVertical="true"
+            android:textSize="14sp"
+            android:layout_toRightOf="@id/payment3"
+            android:layout_marginLeft="20dp"/>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

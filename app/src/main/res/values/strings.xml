@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">SneakerSuds</string>
+    <string name="welcome_to_sneakersuds">Welcome to SneakerSuds</string>
+    <string name="sign_in_to_continue">Sign in to continue</string>
+    <string name="your_email">Your Email</string>
+    <string name="password">Password</string>
+    <string name="or">OR</string>
+    <string name="login_with_google">Login with Google</string>
+    <string name="login_with_facebook">Login with Facebook</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="don_t_have_a_account">Don’t have a account?</string>
+    <string name="register">Register</string>
+    <string name="create_an_new_account">Create an new account</string>
+    <string name="let_s_get_started">Let’s Get Started</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="have_a_account">have a account?</string>
+    <string name="sign_in">Sign In</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="your_nama">Your Nama</string>
+    <string name="repeat_password">Repeat Password</string>
+    <string name="choose_location">Choose Location</string>
+    <string name="hello">Hello,</string>
+    <string name="ikhwan">Ikhwan</string>
+    <string name="latest_offers">Latest Offers</string>
+    <string name="profile">Profile</string>
+    <string name="ikhwan_alfi_mushaffa_asadilah">Ikhwan Alfi Mushaffa Asadilah</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="what_do_you_want_to_get_done_today">What do you want to get done today?</string>
+    <string name="kupon_diskon">Kupon Diskon</string>
+    <string name="wash_semi_foam_in_its_entirety_details"><![CDATA[Wash semi foam in its entirety & details.]]></string>
+</resources>

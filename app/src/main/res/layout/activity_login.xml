@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/background1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp"
+        android:src="@drawable/logosneakersuds2"
+        tools:ignore="ContentDescription" />
+    <TextView
+        android:id="@+id/text_welcome"
+        android:layout_below="@+id/background1"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_to_sneakersuds"
+        android:fontFamily="@font/poppinsbold"
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_welcome"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppinsregular"
+        android:text="@string/sign_in_to_continue"
+        android:textColor="@color/gray"
+        android:textSize="12sp"
+        tools:ignore="TextContrastCheck" />
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_below="@id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        >
+        <EditText
+            android:id="@+id/edit_email_login"
+            android:layout_width="343dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle"
+            android:drawableStart="@drawable/message"
+            android:fontFamily="@font/poppinsregular"
+            android:minHeight="48dp"
+            android:paddingStart="10dp"
+            android:hint="@string/your_email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/gray"
+            android:textSize="12sp"
+            tools:ignore="Autofill,LabelFor,RtlSymmetry,TextContrastCheck,TextFields"
+            />
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/edit_password_login"
+            android:layout_width="343dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle"
+            android:drawableStart="@drawable/password"
+            android:fontFamily="@font/poppinsregular"
+            android:minHeight="48dp"
+            android:paddingStart="10dp"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:textColor="@color/gray"
+            android:textSize="12sp"
+            tools:ignore="Autofill,LabelFor,RtlSymmetry,TextContrastCheck,TextFields"
+            />
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your password is between 4 and 12 characters"
+            android:fontFamily="@font/poppinslight"
+            android:textSize="10sp"
+            />
+
+        <Button
+            android:id="@+id/btn_sign_in"
+            android:layout_width="343dp"
+            android:layout_height="57dp"
+            android:paddingHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Sign In"
+            android:background="@drawable/btn_sign_in"
+            android:textAllCaps="false"
+            android:fontFamily="@font/poppinsbold"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+        <LinearLayout
+            android:id="@+id/layout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            tools:ignore="ObsoleteLayoutParam">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/line"
+                tools:ignore="ContentDescription,ImageContrastCheck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/poppinsbold"
+                android:text="@string/or"
+                android:textColor="@color/gray"
+                android:textSize="14sp"
+                tools:ignore="TextContrastCheck" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line"
+                android:layout_marginTop="10dp"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_google_login"
+            android:layout_width="343dp"
+            android:layout_height="57dp"
+            android:paddingHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/login_with_google"
+            android:background="@drawable/bg_rectangle_email"
+            android:textAllCaps="false"
+            android:fontFamily="@font/poppinsbold"
+            android:textSize="14sp"
+            android:textColor="@color/gray"
+            android:drawableStart="@drawable/google"
+
+            tools:ignore="VisualLintButtonSize" />
+        <Button
+            android:id="@+id/btn_edit_profile"
+            android:layout_width="343dp"
+            android:layout_height="57dp"
+            android:paddingHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/login_with_facebook"
+            android:background="@drawable/bg_rectangle_email"
+            android:textAllCaps="false"
+            android:fontFamily="@font/poppinsbold"
+            android:textSize="14sp"
+            android:textColor="@color/gray"
+            android:drawableStart="@drawable/facebook"
+
+        tools:ignore="VisualLintButtonSize" />
+
+        <TextView
+            android:id="@+id/lupa_password_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/poppinsbold"
+            android:text="@string/forgot_password"
+            android:textColor="@color/secondBlue"
+            tools:ignore="TextContrastCheck" />
+        <LinearLayout
+            android:id="@+id/dont_have_acoun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            tools:ignore="ObsoleteLayoutParam">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/don_t_have_a_account"
+                android:fontFamily="@font/poppinsregular"
+                android:textSize="12sp"
+                tools:ignore="VisualLintBounds" />
+
+            <TextView
+                android:id="@+id/text_register_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/poppinsbold"
+                android:text="@string/register"
+                android:textColor="@color/secondBlue"
+                tools:ignore="TextContrastCheck" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

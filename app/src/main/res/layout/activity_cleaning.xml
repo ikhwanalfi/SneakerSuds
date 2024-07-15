@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CleaningActivity">
+
+    <TextView
+        android:id="@+id/titleBasket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/poppinssemibold"
+        android:text="Cleaning"
+        android:textColor="@color/black"
+        android:textSize="22sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleBasket"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="100dp">
+
+        <LinearLayout
+            android:id="@+id/viewBasket"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsregular"
+                android:text=" "
+                android:textColor="@color/gray"
+                android:textSize="18sp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/basket1"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginVertical="10dp"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="10dp"
+                app:cardPreventCornerOverlap="false"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingHorizontal="10dp">
+
+                    <ImageView
+                        android:id="@+id/image1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:src="@drawable/sportshoes" />
+                    <ImageView
+                        android:layout_below="@id/subtitle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="100dp"
+                        android:layout_marginTop="12dp"
+                        android:src="@drawable/icon_kurang"
+                        />
+                    <TextView
+                        android:id="@+id/text_1"
+                        android:layout_below="@id/subtitle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="115dp"
+                        android:layout_marginTop="10dp"
+                        android:text="0"
+                        />
+                    <ImageView
+                        android:layout_below="@id/subtitle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="130dp"
+                        android:layout_marginTop="12dp"
+                        android:src="@drawable/icon_tambah"
+                        />
+
+                    <TextView
+                        android:id="@+id/title1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/image1"
+                        android:fontFamily="@font/poppinsregular"
+                        android:text="Sneakers / Sport Shoes"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/subtitle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/title1"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/image1"
+                        android:fontFamily="@font/poppinsregular"
+                        android:text="3-4 day | Rp. 65.000,00 / Item"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/price1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/poppinsbold"
+                        android:text="Rp 0,00"
+                        android:textColor="@color/blue"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/basket2"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginVertical="10dp"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="10dp"
+                app:cardPreventCornerOverlap="false"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingHorizontal="10dp">
+
+                    <ImageView
+                        android:id="@+id/image2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:src="@drawable/boot" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/subtitle2"
+                        android:layout_marginStart="100dp"
+                        android:layout_marginTop="12dp"
+                        android:src="@drawable/icon_kurang" />
+                    <TextView
+                        android:id="@+id/text_2"
+                        android:layout_below="@id/subtitle2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="115dp"
+                        android:layout_marginTop="10dp"
+                        android:text="0"
+                        />
+                    <ImageView
+                        android:layout_below="@id/subtitle2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="130dp"
+                        android:layout_marginTop="12dp"
+                        android:src="@drawable/icon_tambah"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/title2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/image2"
+                        android:fontFamily="@font/poppinsregular"
+                        android:text="Boots "
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/subtitle2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/title2"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/image2"
+                        android:fontFamily="@font/poppinsregular"
+                        android:text="3-4 day | Rp. 65.000,00 / Item"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/price2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/poppinsbold"
+                        android:text="Rp 0,00"
+                        android:textColor="@color/blue"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/basket3"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginVertical="10dp"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="10dp"
+                app:cardPreventCornerOverlap="false"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingHorizontal="10dp">
+
+                    <ImageView
+                        android:id="@+id/image3"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:src="@drawable/highheels" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/subtitle3"
+                        android:layout_marginStart="100dp"
+                        android:layout_marginTop="12dp"
+                        android:src="@drawable/icon_kurang" />
+                    <TextView
+                        android:id="@+id/text_3"
+                        android:layout_below="@id/subtitle3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="115dp"
+                        android:layout_marginTop="10dp"
+                        android:text="0"
+                        />
+                    <ImageView
+                        android:layout_below="@id/subtitle3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="130dp"
+                        android:layout_marginTop="12dp"
+                        android:src="@drawable/icon_tambah"
+                        />
+
+                    <TextView
+                        android:id="@+id/title3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/image3"
+                        android:fontFamily="@font/poppinsregular"
+                        android:text="Sendal / Heels / Wedges"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/subtitle3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/title3"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/image3"
+                        android:fontFamily="@font/poppinsregular"
+                        android:text="3-4 day | Rp. 65.000,00 / Item"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/price3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/poppinsbold"
+                        android:text="Rp 0,00"
+                        android:textColor="@color/blue"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/basket4"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginVertical="10dp"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="10dp"
+                app:cardPreventCornerOverlap="false"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingHorizontal="10dp">
+
+                    <ImageView
+                        android:id="@+id/image4"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:src="@drawable/gymshoes" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/subtitle4"
+                        android:layout_marginStart="100dp"
+                        android:layout_marginTop="12dp"
+                        android:src="@drawable/icon_kurang" />
+                    <TextView
+                        android:id="@+id/text_4"
+                        android:layout_below="@id/subtitle4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="115dp"
+                        android:layout_marginTop="10dp"
+                        android:text="0"
+                        />
+                    <ImageView
+                        android:layout_below="@id/subtitle4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="130dp"
+                        android:layout_marginTop="12dp"
+                        android:src="@drawable/icon_tambah"
+                        />
+                    <TextView
+                        android:id="@+id/title4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/image4"
+                        android:fontFamily="@font/poppinsregular"
+                        android:text="Sepatu Anak ( 34 Max Size )"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/subtitle4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/title4"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/image4"
+                        android:fontFamily="@font/poppinsregular"
+                        android:text="3-4 day | Rp. 65.000,00 / Item"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/price4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/poppinsbold"
+                        android:text="Rp 0,00"
+                        android:textColor="@color/blue"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@color/blue">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinssemibold"
+                    android:text="Total Biaya Awal"
+                    android:textColor="@color/black"
+
+                    android:textSize="12dp"
+                    tools:ignore="TextSizeCheck" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/poppinsregular"
+                android:text="Rp 0,00"
+                android:textColor="@color/blue"
+                android:textSize="12dp"
+                tools:ignore="TextSizeCheck" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@color/blue">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinssemibold"
+                    android:text="Potongan"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    tools:ignore="TextSizeCheck" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/poppinsregular"
+                android:text="Rp 0,00"
+                android:textColor="@color/red"
+                android:textSize="12dp"
+                tools:ignore="TextSizeCheck" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@color/blue">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinssemibold"
+                    android:text="Total Biaya Akhir"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    tools:ignore="TextSizeCheck" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/poppinsregular"
+                android:text="Rp 0,00"
+                android:textColor="@color/blue"
+                android:textSize="12dp"
+                tools:ignore="TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/btn_lanjut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lanjutkan"
+                android:textColor="@color/black"
+                android:background="@color/white"
+                android:layout_marginStart="250dp"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

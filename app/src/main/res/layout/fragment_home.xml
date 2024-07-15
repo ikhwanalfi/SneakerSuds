@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hello"
+                    android:textColor="@color/black"
+                    android:textSize="22sp"
+                    android:fontFamily="@font/poppinssemibold"
+                    android:gravity="center"
+                    />
+                <TextView
+                    android:id="@+id/nama_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:text="@string/ikhwan"
+                    android:textColor="@color/black"
+                    android:textSize="22sp"
+                    android:fontFamily="@font/poppinssemibold"
+                    />
+                <ImageView
+                    android:id="@+id/btn_notif"
+                    android:layout_width="20dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/icon_notif"
+                    android:layout_marginStart="100dp"
+                    />
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/toolbar"
+            android:layout_marginBottom="100dp"
+            >
+        <LinearLayout
+            android:layout_below="@+id/toolbar"
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/latest_offers"
+                android:layout_marginStart="35sp"
+                android:fontFamily="@font/poppinsmedium"
+                android:textSize="16sp"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/mask_group"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="30dp"
+                android:text="@string/what_do_you_want_to_get_done_today"
+                android:fontFamily="@font/poppinsmedium"
+                android:textSize="16sp"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                >
+                <RelativeLayout
+                    android:id="@+id/btn_cleaning"
+                    android:layout_width="150dp"
+                    android:layout_height="180dp"
+                    android:paddingHorizontal="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@color/abu"
+                    >
+
+                    <ImageView
+                        android:id="@+id/icon_1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:src="@drawable/icon_polish" />
+                    <TextView
+                        android:id="@+id/text_icon_1"
+                        android:layout_below="@id/icon_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cleaning"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/poppinsregular"
+                        android:layout_marginTop="3dp"/>
+
+                    <TextView
+                        android:id="@+id/information_1"
+                        android:layout_width="140dp"
+                        android:layout_height="44dp"
+                        android:layout_below="@id/text_icon_1"
+                        android:layout_marginLeft="-70dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/icon_1"
+                        android:fontFamily="@font/poppinsregular"
+                        android:text="@string/wash_semi_foam_in_its_entirety_details"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="150dp"
+                    android:layout_height="180dp"
+                    android:paddingHorizontal="10dp"
+                    android:background="@color/abu"
+                    >
+
+                    <ImageView
+                        android:id="@+id/icon_2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:src="@drawable/icon_painting" />
+                    <TextView
+                        android:id="@+id/text_icon_2"
+                        android:layout_below="@id/icon_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Coloring"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/poppinsregular"
+                        android:layout_marginTop="3dp"/>
+
+                    <TextView
+                        android:id="@+id/information_2"
+                        android:layout_width="140dp"
+                        android:layout_height="54dp"
+                        android:layout_below="@id/text_icon_2"
+                        android:layout_marginLeft="-70dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/icon_2"
+                        android:fontFamily="@font/poppinsregular"
+                        android:text="Changing the color of faded shoes to new shoes."
+                        android:textColor="@color/gray"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                >
+                <RelativeLayout
+                    android:layout_width="150dp"
+                    android:layout_height="180dp"
+                    android:paddingHorizontal="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@color/abu"
+                    >
+
+                    <ImageView
+                        android:id="@+id/icon_3"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:src="@drawable/icon_clock" />
+                    <TextView
+                        android:id="@+id/text_icon_3"
+                        android:layout_below="@id/icon_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fast cleaning"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/poppinsregular"
+                        android:layout_marginTop="3dp"/>
+
+                    <TextView
+                        android:id="@+id/information_3"
+                        android:layout_width="140dp"
+                        android:layout_height="44dp"
+                        android:layout_below="@id/text_icon_3"
+                        android:layout_marginLeft="-70dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/icon_3"
+                        android:fontFamily="@font/poppinsregular"
+                        android:text="Wash semi foam on certain parts."
+                        android:textColor="@color/gray"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="150dp"
+                    android:layout_height="180dp"
+                    android:paddingHorizontal="10dp"
+                    android:background="@color/abu"
+                    >
+
+                    <ImageView
+                        android:id="@+id/icon_4"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:src="@drawable/icon_shoes" />
+                    <TextView
+                        android:id="@+id/text_icon_4"
+                        android:layout_below="@id/icon_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Repainting"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/poppinsregular"
+                        android:layout_marginTop="3dp"/>
+
+                    <TextView
+                        android:id="@+id/subtitle1"
+                        android:layout_width="140dp"
+                        android:layout_height="67dp"
+                        android:layout_below="@id/text_icon_4"
+                        android:layout_marginLeft="-70dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/icon_4"
+                        android:fontFamily="@font/poppinsregular"
+                        android:text="Repair shoes or bags, change leather or material, replace shoe soles etc."
+                        android:textColor="@color/gray"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:text="Loyalty Mission (0/6)*"
+                android:fontFamily="@font/poppinsmedium"
+                android:textSize="16sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hingga 31 Dec 2023"
+                android:layout_marginStart="30dp"
+                android:textColor="@color/gray"
+                android:textSize="10sp"
+                android:fontFamily="@font/poppinsregular"
+                />
+        </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+</FrameLayout>
