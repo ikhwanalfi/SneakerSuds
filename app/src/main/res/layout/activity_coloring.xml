@@ -5,10 +5,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BasketFragment">
+    android:background="@color/white"
+    tools:context=".CleaningActivity">
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+
+
+        />
 
     <TextView
         android:id="@+id/titleBasket"
+        android:background="@color/white"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -19,10 +32,11 @@
         android:textSize="22sp" />
 
     <ScrollView
+        android:background="@color/white"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/cvSearch"
-        android:layout_marginTop="30dp"
+        android:layout_below="@id/titleBasket"
+        android:layout_marginTop="20dp"
         android:layout_marginBottom="100dp">
 
         <LinearLayout
@@ -65,16 +79,31 @@
                         android:layout_marginEnd="10dp"
                         android:layout_marginBottom="10dp"
                         android:src="@drawable/sportshoes" />
-
-                    <TextView
-                        android:id="@+id/completed1"
+                    <ImageView
+                        android:layout_below="@id/subtitle1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_below="@id/image1"
+                        android:layout_marginStart="100dp"
+                        android:layout_marginTop="12dp"
+                        android:src="@drawable/icon_kurang"
+                        />
+                    <TextView
+                        android:id="@+id/text_1"
+                        android:layout_below="@id/subtitle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="115dp"
                         android:layout_marginTop="10dp"
-                        android:fontFamily="@font/poppinssemibold"
-                        android:text="Completed"
-                        android:textColor="@color/blue" />
+                        android:text="0"
+                        />
+                    <ImageView
+                        android:layout_below="@id/subtitle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="130dp"
+                        android:layout_marginTop="12dp"
+                        android:src="@drawable/icon_tambah"
+                        />
 
                     <TextView
                         android:id="@+id/title1"
@@ -110,7 +139,7 @@
                         android:layout_marginRight="5dp"
                         android:layout_marginBottom="10dp"
                         android:fontFamily="@font/poppinsbold"
-                        android:text="Rp 150.000"
+                        android:text="Rp 0,00"
                         android:textColor="@color/blue"
                         android:textSize="16sp" />
                 </RelativeLayout>
@@ -142,15 +171,32 @@
                         android:layout_marginEnd="10dp"
                         android:layout_marginBottom="10dp"
                         android:src="@drawable/boot" />
-                    <TextView
-                        android:id="@+id/completed2"
-                        android:layout_below="@id/image2"
+
+                    <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Completed"
-                        android:textColor="@color/blue"
-                        android:fontFamily="@font/poppinssemibold"
-                        android:layout_marginTop="8dp"/>
+                        android:layout_below="@id/subtitle2"
+                        android:layout_marginStart="100dp"
+                        android:layout_marginTop="12dp"
+                        android:src="@drawable/icon_kurang" />
+                    <TextView
+                        android:id="@+id/text_2"
+                        android:layout_below="@id/subtitle2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="115dp"
+                        android:layout_marginTop="10dp"
+                        android:text="0"
+                        />
+                    <ImageView
+                        android:layout_below="@id/subtitle2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="130dp"
+                        android:layout_marginTop="12dp"
+                        android:src="@drawable/icon_tambah"
+                        />
+
 
                     <TextView
                         android:id="@+id/title2"
@@ -186,7 +232,7 @@
                         android:layout_marginRight="5dp"
                         android:layout_marginBottom="10dp"
                         android:fontFamily="@font/poppinsbold"
-                        android:text="Rp 50.000"
+                        android:text="Rp 0,00"
                         android:textColor="@color/blue"
                         android:textSize="16sp" />
                 </RelativeLayout>
@@ -208,21 +254,40 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:paddingHorizontal="10dp">
+
                     <ImageView
                         android:id="@+id/image3"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/highheels"
-                        android:layout_margin="10dp"/>
-                    <TextView
-                        android:id="@+id/completed3"
-                        android:layout_below="@id/image3"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:src="@drawable/highheels" />
+                    <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Completed"
-                        android:textColor="@color/blue"
-                        android:fontFamily="@font/poppinssemibold"
-                        android:layout_marginTop="8dp"/>
+                        android:layout_below="@id/subtitle3"
+                        android:layout_marginStart="100dp"
+                        android:layout_marginTop="12dp"
+                        android:src="@drawable/icon_kurang" />
+                    <TextView
+                        android:id="@+id/text_3"
+                        android:layout_below="@id/subtitle3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="115dp"
+                        android:layout_marginTop="10dp"
+                        android:text="0"
+                        />
+                    <ImageView
+                        android:layout_below="@id/subtitle3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="130dp"
+                        android:layout_marginTop="12dp"
+                        android:src="@drawable/icon_tambah"
+                        />
 
                     <TextView
                         android:id="@+id/title3"
@@ -258,7 +323,7 @@
                         android:layout_marginRight="5dp"
                         android:layout_marginBottom="10dp"
                         android:fontFamily="@font/poppinsbold"
-                        android:text="Rp 80.000"
+                        android:text="Rp 0,00"
                         android:textColor="@color/blue"
                         android:textSize="16sp" />
                 </RelativeLayout>
@@ -280,22 +345,40 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:paddingHorizontal="10dp">
+
                     <ImageView
                         android:id="@+id/image4"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/gymshoes"
-                        android:layout_margin="10dp"/>
-                    <TextView
-                        android:id="@+id/completed4"
-                        android:layout_below="@id/image4"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:src="@drawable/gymshoes" />
+                    <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Completed"
-                        android:textColor="@color/blue"
-                        android:fontFamily="@font/poppinssemibold"
-                        android:layout_marginTop="8dp"/>
-
+                        android:layout_below="@id/subtitle4"
+                        android:layout_marginStart="100dp"
+                        android:layout_marginTop="12dp"
+                        android:src="@drawable/icon_kurang" />
+                    <TextView
+                        android:id="@+id/text_4"
+                        android:layout_below="@id/subtitle4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="115dp"
+                        android:layout_marginTop="10dp"
+                        android:text="0"
+                        />
+                    <ImageView
+                        android:layout_below="@id/subtitle4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="130dp"
+                        android:layout_marginTop="12dp"
+                        android:src="@drawable/icon_tambah"
+                        />
                     <TextView
                         android:id="@+id/title4"
                         android:layout_width="wrap_content"
@@ -330,7 +413,7 @@
                         android:layout_marginRight="5dp"
                         android:layout_marginBottom="10dp"
                         android:fontFamily="@font/poppinsbold"
-                        android:text="Rp 100.000"
+                        android:text="Rp 0,00"
                         android:textColor="@color/blue"
                         android:textSize="16sp" />
                 </RelativeLayout>
@@ -347,18 +430,22 @@
                     android:fontFamily="@font/poppinssemibold"
                     android:text="Total Biaya Awal"
                     android:textColor="@color/black"
-
-                    android:textSize="12dp" />
+                    android:layout_marginStart="10dp"
+                    android:textSize="12dp"
+                    tools:ignore="TextSizeCheck" />
 
             </RelativeLayout>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Rp 0,00"
+                android:layout_marginStart="10dp"
+                android:layout_alignParentEnd="true"
                 android:fontFamily="@font/poppinsregular"
-                android:textSize="12dp"
+                android:text="Rp 0,00"
                 android:textColor="@color/blue"
-                android:layout_alignParentEnd="true"/>
+                android:textSize="12dp"
+                tools:ignore="TextSizeCheck" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -371,17 +458,23 @@
                     android:fontFamily="@font/poppinssemibold"
                     android:text="Potongan"
                     android:textColor="@color/black"
-                    android:textSize="12dp" />
+                    android:layout_marginStart="10dp"
+                    android:textSize="12dp"
+                    tools:ignore="TextSizeCheck" />
 
             </RelativeLayout>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Rp 0,00"
+                android:layout_alignParentEnd="true"
                 android:fontFamily="@font/poppinsregular"
-                android:textSize="12dp"
+
+                android:layout_marginStart="10dp"
+                android:text="Rp 0,00"
                 android:textColor="@color/red"
-                android:layout_alignParentEnd="true"/>
+                android:textSize="12dp"
+                tools:ignore="TextSizeCheck" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -394,17 +487,31 @@
                     android:fontFamily="@font/poppinssemibold"
                     android:text="Total Biaya Akhir"
                     android:textColor="@color/black"
-                    android:textSize="12dp" />
+                    android:textSize="12dp"
+                    android:layout_marginStart="10dp"
+                    tools:ignore="TextSizeCheck" />
 
             </RelativeLayout>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Rp 0,00"
+                android:layout_alignParentEnd="true"
                 android:fontFamily="@font/poppinsregular"
-                android:textSize="12dp"
+                android:text="Rp 0,00"
                 android:textColor="@color/blue"
-                android:layout_alignParentEnd="true"/>
+                android:layout_marginStart="10dp"
+                android:textSize="12dp"
+                tools:ignore="TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/btn_lanjut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lanjutkan"
+                android:textColor="@color/black"
+                android:background="@color/white"
+                android:layout_marginStart="250dp"/>
 
 
         </LinearLayout>

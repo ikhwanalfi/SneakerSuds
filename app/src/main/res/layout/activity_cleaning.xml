@@ -5,10 +5,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".CleaningActivity">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        />
 
     <TextView
         android:id="@+id/titleBasket"
+        android:background="@color/white"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -19,6 +27,7 @@
         android:textSize="22sp" />
 
     <ScrollView
+        android:background="@color/white"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/titleBasket"
@@ -416,7 +425,7 @@
                     android:fontFamily="@font/poppinssemibold"
                     android:text="Total Biaya Awal"
                     android:textColor="@color/black"
-
+                    android:layout_marginStart="10dp"
                     android:textSize="12dp"
                     tools:ignore="TextSizeCheck" />
 
@@ -425,6 +434,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
                 android:layout_alignParentEnd="true"
                 android:fontFamily="@font/poppinsregular"
                 android:text="Rp 0,00"
@@ -443,6 +453,7 @@
                     android:fontFamily="@font/poppinssemibold"
                     android:text="Potongan"
                     android:textColor="@color/black"
+                    android:layout_marginStart="10dp"
                     android:textSize="12dp"
                     tools:ignore="TextSizeCheck" />
 
@@ -453,6 +464,8 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:fontFamily="@font/poppinsregular"
+
+                android:layout_marginStart="10dp"
                 android:text="Rp 0,00"
                 android:textColor="@color/red"
                 android:textSize="12dp"
@@ -470,6 +483,7 @@
                     android:text="Total Biaya Akhir"
                     android:textColor="@color/black"
                     android:textSize="12dp"
+                    android:layout_marginStart="10dp"
                     tools:ignore="TextSizeCheck" />
 
             </RelativeLayout>
@@ -481,6 +495,7 @@
                 android:fontFamily="@font/poppinsregular"
                 android:text="Rp 0,00"
                 android:textColor="@color/blue"
+                android:layout_marginStart="10dp"
                 android:textSize="12dp"
                 tools:ignore="TextSizeCheck" />
 
